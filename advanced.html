@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./responsive.css">
+	<title>Project 0 - Programming with Python and JavaScript | CS50</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+	<div class="container-fluid">
+		<div class="top-bar">
+			<ul>
+				<li class="small-logo">
+					<img src="./logo-small.svg" width="74" height="24" class="img-fluid">
+				</li>
+				<li>
+					<a class="nav-item nav-link" href="./index.html">
+						Web
+					</a>
+				</li>
+				<li>
+					<a class="nav-item nav-link" href="./images.html">
+						Images
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<section class="advanced">
+	<div class="title-bar">
+		<h1>Advanced Search</h1>
+	</div>
+
+	<div class="container">
+		<h2>Find pages with...</h2>
+
+		<form action="https://google.com/search" class="text-center" autocomplete="off">
+
+			<div class="form-group row">
+				<label for="all-words" class="col-md-2 col-form-label">all these words:</label>
+				<div class="col-md-10 max-600">
+					<input type="text" class="form-control" name="as_q" id="all-words">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="exact-words" class="col-md-2 col-form-label">this exact word or phrase:</label>
+				<div class="col-md-10 max-600">
+					<input type="text" class="form-control" name="as_epq" id="exact-words">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="any-words" class="col-md-2 col-form-label">any of these words:</label>
+				<div class="col-md-10 max-600">
+					<input type="text" class="form-control" name="as_oq" id="any-words">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="none-words" class="col-md-2 col-form-label">none of these words:</label>
+				<div class="col-md-10 max-600">
+					<input type="text" class="form-control" name="as_eq" id="none-words">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="none-words" class="col-md-2 col-form-label"></label>
+				<div class="col-md-10 max-600 text-right">
+					<input type="submit" class="btn btn-advanced btn-sm" value="Advanced Search">
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</section>
+
+</body>
+</html>

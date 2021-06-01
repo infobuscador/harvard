@@ -1,0 +1,252 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	color: #222;
+}
+
+.blue {color: $blue;}
+.red {color: $red;}
+.yellow {color: $yellow;}
+.green {color: $green;}
+
+._list-unstyled {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+._link_unstyled {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.logo {
+		display: block;
+		margin-bottom: 35px;
+		position: relative;
+
+		.addon {
+			color: #4285f4;
+			font: 16px/16px roboto-regular, arial, sans-serif;
+			top: 76px;
+			white-space: nowrap;
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			margin-right: -131px;
+		}
+
+	}
+
+	&.voice-icon {
+		@extend ._svg;
+		width: 25px;
+		right: 10px;
+		margin-top: -12px;
+		cursor: pointer;
+		display: block;
+	}
+}
+
+
+.top-bar {
+
+	width: 100%;
+	font-size: 13px;
+
+	ul {
+		@extend ._list-unstyled;
+		text-align: right;
+
+		li {
+			display: inline-block;
+
+			&.small-logo {
+				float: left;
+				padding-top: 5px;
+			}
+		}
+
+		a {
+			@extend ._link_unstyled;
+		}
+	}
+}
+
+.btn {
+	border-radius: 4px;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin: 11px 4px;
+	padding: 0 16px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+
+	&.btn-default {
+		background-color: #f8f9fa;
+		border: 1px solid #f8f9fa;
+		color: #3c4043;
+
+		&:hover {
+			box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+			background-color: #f8f9fa;
+			border: 1px solid #dadce0;
+			color: #202124;
+		}
+	}
+
+	&.btn-advanced {
+		user-select: none;
+		padding: 0 12px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background-color: #4d90fe;
+		background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+		background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+		background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+		background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+		background-image: linear-gradient(top,#4d90fe,#4787ed);
+		border: 1px solid #3079ed;
+		color: #fff;
+
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		cursor: default;
+		font-size: 11px;
+		font-weight: bold;
+		text-align: center;
+		white-space: nowrap;
+		height: 27px;
+		line-height: 27px;
+		min-width: 54px;
+		outline: 0;
+
+		&:hover {
+			background-color: #357ae8;
+			background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: -ms-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: -o-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: linear-gradient(top,#4d90fe,#357ae8);
+			border: 1px solid #2f5bb7;
+			border-image: initial;
+		}
+	}
+}
+
+
+.search-box {
+	position: relative;
+
+	.form-control {
+		padding: 9px 40px 9px 40px;
+		height: auto;
+		border-radius: 40px;
+
+		&:hover {
+			background-color: #fff;
+			box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+			border-color: rgba(223, 225, 229, 0);
+		}
+	}
+
+	._svg {
+		position: absolute;
+		top: 50%;
+	}
+
+	svg {
+
+		&.search-icon {
+			@extend ._svg;
+			width: 20px;
+			height: 20px;
+			left: 12px;
+			margin-top: -10px;
+			fill: #88919a;
+		}
+	}
+}
+
+
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(90vh - 56px);
+
+	.search-box {
+		max-width: 585px;
+		margin: 0 auto 20px;
+	}
+}
+
+
+.advanced {
+
+	.container {
+		margin: 25px 35px;
+		padding: 0;
+	}
+
+	.title-bar {
+		border-bottom: #eee solid 1px;
+		margin: 20px 0 40px;
+	}
+
+
+	h1 {
+		color: #d93025;
+		font-size: 20px;
+		margin: 25px 35px;
+		font-weight: normal;
+	}
+
+	h2 {
+		font-size: 16px;
+		font-weight: normal;
+		color: #333;
+		margin-bottom: 20px;
+	}
+
+	.col-form-label {
+		text-align: left;
+		font-size: 13px;
+	}
+
+	.form-control {
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		border: 1px solid #d9d9d9;
+		border-top: 1px solid #c0c0c0;
+		font-size: 13px;
+		height: 29px;
+		padding: 1px 8px;
+	}
+
+	.max-600 {
+		max-width: 600px;
+	}
+}

@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+  .main form {
+    max-width: 100%;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 272px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
